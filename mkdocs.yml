@@ -8,6 +8,7 @@ plugins:
   - search:
       lang: 
         - en
+        - ja
         # - zh
 extra:
   social:
@@ -53,7 +54,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
+    # - navigation.tabs    # 如果文件夹太多就会无法横向翻页
     - navigation.sections
     - navigation.expand
     - toc.follow
