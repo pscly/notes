@@ -1,0 +1,72 @@
+site_name: My Docs
+plugins:
+  # 当前版本还没有这玩意(只有内测有2022年4月20日)
+  # - social:
+  #     cards_color:
+  #       fill: "#0FF1CE" 
+  #       text: "#FFFFFF"
+  - search:
+      lang: 
+        - en
+        # - zh
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/pscly
+  version:
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  analytics:
+    provider: google
+    property: Pscly
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
+  alternate:
+    - name: 中文
+      link: /zh/
+      lang: zh
+    - name: English
+      link: /en/ 
+      lang: en
+theme:
+  name: material
+  palette:
+    primary: deep purple
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
