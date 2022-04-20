@@ -21,3 +21,4 @@ build-backend = "pdm.pep517.api"
 [tool.pdm.scripts]
 init = "mkdocs new ."
 start = "mkdocs serve -a 0.0.0.0:8000"
+build = "mkdocs build"
