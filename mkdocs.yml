@@ -1,4 +1,5 @@
-site_name: My Docs
+site_name: Pscly Docs
+# repo_url: https://github.com/pscly/1note
 plugins:
   # 当前版本还没有这玩意(只有内测有2022年4月20日)
   # - social:
@@ -48,15 +49,18 @@ extra:
       link: /en/ 
       lang: en
 theme:
+  # logo: 'favicon.ico'
+  font:
+      code: 'Ubuntu Mono'
   name: material
   palette:
     primary: deep purple
   features:
     - navigation.instant
     - navigation.tracking
-    # - navigation.tabs    # 如果文件夹太多就会无法横向翻页
+    - navigation.tabs    # 如果文件夹太多就会无法横向翻页
+    # - navigation.expand   # 默认展开子文件
     - navigation.sections
-    - navigation.expand
     - toc.follow
     - navigation.top
     - search.suggest
@@ -64,10 +68,22 @@ theme:
     - search.share
     
 markdown_extensions:
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
   - toc:
       permalink: true
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences 
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex
+  - 
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
