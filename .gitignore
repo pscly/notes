@@ -149,6 +149,7 @@ my_data.json
 ._*
 mydatas/
 y_*
+y_*/
 .vscode/
 __pypackages__
 .pdm.toml
