@@ -1,24 +1,4 @@
 site_name: Pscly Docs
-theme:
-  # logo: 'favicon.ico'
-  # name: readthedocs
-  name: material
-  font:
-      code: 'Ubuntu Mono'
-  palette:
-    primary: deep purple
-  features:
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs    # 如果文件夹太多就会无法横向翻页
-    # - navigation.expand   # 默认展开子文件
-    - navigation.sections
-    - toc.follow
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - search.share
-    
 # repo_url: https://github.com/pscly/1note
 plugins:
   # 当前版本还没有这玩意(只有内测有2022年4月20日)
@@ -68,7 +48,25 @@ extra:
     - name: English
       link: /en/ 
       lang: en
-
+theme:
+  # logo: 'favicon.ico'
+  font:
+      code: 'Ubuntu Mono'
+  name: material
+  palette:
+    primary: deep purple
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs    # 如果文件夹太多就会无法横向翻页
+    # - navigation.expand   # 默认展开子文件
+    - navigation.sections
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    
 markdown_extensions:
   - def_list
   - pymdownx.tasklist:
